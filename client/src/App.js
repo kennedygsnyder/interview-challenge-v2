@@ -9,6 +9,11 @@ import { AppBar, Toolbar, Typography } from '@mui/material';
 // Images
 import LexcelonLogo from './images/LexcelonLogo.png';
 
+//Percentage Formatter
+function percentFormatter(params) {
+    return (params.value * 100).toFixed(2) + '%';
+}
+
 // Constants
 const LEXCELON_GREEN = '#598d36';
 const TABLE_PAGE_SIZE = 5;
@@ -60,6 +65,7 @@ const TABLE_COLUMNS = [
     headerName: 'Percent',
     width: 160,
     headerAlign: 'center',
+    valueFormatter: percentFormatter
   },
   {
     field: 'density',
