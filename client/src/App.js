@@ -99,7 +99,7 @@ export default class App extends Component {
     return (
       <>
         {/* App Bar */}
-        <AppBar position='static'>
+        <AppBar position='static' style ={{backgroundColor:LEXCELON_GREEN}}>
           <Toolbar>
           </Toolbar>
         </AppBar>
