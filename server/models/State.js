@@ -6,7 +6,7 @@ class State extends Model {
 }
 
 // This function creates the actual model definition.
-Person.init({
+State.init({
   // Model attributes are defined here
   // No need to include id for the model. That is included automatically!
   name: {
